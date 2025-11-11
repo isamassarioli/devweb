@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Formulário HTML</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1>Elementos de Formulário Básicos</h1>
+
+<form id="formulario" method="post" action="salvar.html">
+
+<div>
+    <h2>Input Text e Input Button</h2>
+    <label for="nomecompleto">Nome Completo:</label>
+    <input type="text" class="vermelho" id="nomecompleto" name="nomecompleto" size="50" maxlength="50" placeholder="Digite o seu Nome Completo" autocomplete="off">
+
+    <input type="button" id="btnBoasVindas" value="Boas Vindas" onclick="boasVindas()">
+    <button type="button" id="btnSorteDoDia" onclick="sorteDoDia()">Sorte do Dia</button>
+</div>
+
+<div>
+    <h2>Input Color</h2>
+    <label for="corfundo">Cor de Fundo da Página:</label>
+    <input type="color" id="corfundo" name="corfundo" onchange="mudaCorFundo(this.value)">
+    <span id="corfundo-texto">#000000</span>
+</div>
+
+<div>
+    <h2>Input File</h2>
+    <label for="foto">Foto:</label>
+    <input type="file" id="foto" name="foto">
+</div>
+
+<div>
+    <h2>Input File com Drag and Drop</h2>
+    <div class="drop-zone" id="dropZone">
+        Arraste e solte um arquivo aqui<br>ou clique para selecionar
+        <input type="file" id="fotoDrop" name="fotoDrop" hidden>
+        <div class="file-name" id="fileName"></div>
+    </div>
+</div>
+
+<div>
+    <h2>Input Password</h2>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha">
+    <input type="button" id="btnVerSenha" value="Mostrar" onclick="mostraSenha(this)">
+</div>
+
+</form>
+
+<script src="upload-dragndrop.js"></script>
+<script>
+function boasVindas(){
+    var nome = document.getElementById("nomecompleto").value;
+    alert("Seja Bem Vindo: "+nome);
+}
+
+function sorteDoDia() {
+    const frases = [
+    "Hoje é um ótimo dia para começar algo novo.",
+    "A sorte favorece os corajosos.",
+    "Grandes oportunidades estão a caminho.",
+    "Siga sua intuição e confie no processo.",
+    "Um sorriso pode mudar o rumo do seu dia.",
+    "O sucesso está mais perto do que você imagina.",
+    "Acredite em si mesmo e o universo acreditará também.",
+    "Tudo o que você busca também está te buscando.",
+    "Um passo de cada vez leva longe.",
+    "A gratidão transforma o comum em extraordinário.",
+    "A paciência é o segredo da serenidade.",
+    "Seja a energia que você quer atrair.",
+    "Algo incrível está prestes a acontecer.",
+    "A vida recompensa quem não desiste.",
+    "Hoje é o dia perfeito para recomeçar.",
+    "Os desafios de hoje são as vitórias de amanhã.",
+    "Você é capaz de mais do que imagina.",
+    "Sorte é o encontro da preparação com a oportunidade.",
+    "Nada é impossível para quem acredita.",
+    "Faça o bem e o bem voltará para você."
+    ];
+
+    const indice = Math.floor(Math.random() * frases.length);
+    alert(frases[indice]);
+}
+
+function mudaCorFundo(cor){
+    document.getElementById("corfundo-texto").innerHTML = cor.toUpperCase();
+    document.body.style.backgroundColor = cor;
+}
+
+function mostraSenha(botao){
+    var campo_senha = document.getElementById("senha");
+
+    if(campo_senha.type == "password"){
+        campo_senha.type = "text";
+        botao.value = "Esconder";
+    }
+    else{
+        campo_senha.type = "password";
+        botao.value = "Mostrar";
+    }
+}
+</script>
+    
+</body>
+</html>
