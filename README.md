@@ -46,10 +46,3 @@ Explore o código em css/ e js/ conforme o projeto.
 Nome: Isadora dos Santos Massarioli
 
 GitHub: isamassarioli
-
----
-
-## 📄 Licença
-Este projeto está sob a MIT License (ou outra licença que preferir — atualize conforme necessário).
-
-*“Este repositório é um espaço de aprendizado pessoal e serve como portfólio dos meus estudos em desenvolvimento web.”*
