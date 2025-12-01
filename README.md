@@ -7,7 +7,6 @@
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/isamassarioli/devweb?style=for-the-badge" />
 </p>
 
-# devweb  
 **Trabalhos em Desenvolvimento Web — HTML, CSS e JS**
 
 ## ✨ Sobre  
