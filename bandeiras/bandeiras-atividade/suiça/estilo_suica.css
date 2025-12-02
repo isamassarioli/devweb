@@ -1,0 +1,30 @@
+ /* bandeira suiça */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.flag {
+    position: relative;
+    width: 3000px;
+    height: 3000px;
+    background-color: #ff0000;
+}
+.cross-vertical {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    height: 50%;
+    background-color: #ffffff;
+}
+.cross-horizontal {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+    background-color: #ffffff;
+}
