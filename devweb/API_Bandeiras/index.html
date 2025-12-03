@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Globais - Países</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Explorador de Países</h1>
+            <p class="descricao">Insira o nome de um país em inglês no campo abaixo e descubra dados como capital, continente, população e visualize a bandeira oficial.</p>
+        </header>
+
+        <form id="formPais">
+            <div class="input-group">
+                <label for="pais">Digite o nome do país (em inglês):</label>
+                <input type="text" id="pais" placeholder="Ex: Portugal, Japan, Canada">
+                <button type="button" id="btnBuscar">Pesquisar</button>
+            </div>
+
+            <div id="resultado" class="resultado hidden">
+                <h2>Resultado da Busca</h2>
+                
+                <label for="capital">Capital:</label>
+                <input type="text" id="capital" readonly>
+
+                <label for="regiao">Continente:</label>
+                <input type="text" id="regiao" readonly>
+
+                <label for="populacao">População:</label>
+                <input type="text" id="populacao" readonly>
+
+                <div class="bandeira-container">
+                    <label>Bandeira Nacional:</label>
+                    <img id="bandeira" alt="Bandeira do país">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
