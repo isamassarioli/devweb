@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -25,7 +25,6 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 5px 10px;
-    transition: opacity 0.3s;
 }
 
 .header-link:hover {
@@ -58,22 +57,30 @@ body {
     font-weight: 600;
     color: white;
     letter-spacing: 2px;
+    text-align: center;
+    align-items: center;
 }
 
 /* Menu de Navegação */
 .nav-menu {
     font-size: 13px;
+    text-align: center;
+    align-items: center;
 }
 
 .nav-menu-link {
-    color: #0669de;
+    color: #de0606;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
 }
 
 .nav-menu-link:hover {
     color: #c4170c;
     text-decoration: underline;
+    text-align: center;
+    align-items: center;
 }
 
 /* Artigo Principal */
@@ -129,7 +136,7 @@ body {
 }
 
 .list-article a {
-    color: #0669de;
+    color: #de0606;
     text-decoration: none;
     font-weight: 500;
 }
@@ -212,7 +219,6 @@ body {
     font-size: 14px;
     display: block;
     margin-bottom: 8px;
-    transition: color 0.3s;
 }
 
 .footer-link:hover {
@@ -247,21 +253,3 @@ body {
     }
 }
 
-/* Animações e Transições */
-a, button {
-    transition: all 0.3s ease;
-}
-
-img {
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.02);
-}
-
-/* Figure Caption */
-figcaption {
-    font-size: 0.875rem;
-    font-style: italic;
-}
