@@ -7,21 +7,70 @@
     box-sizing: border-box;
 }
 
+#article-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 40px;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Header Superior */
-.header-top {
-    background-color: #c4170c;
-    color: white;
-    font-size: 14px;
+#imagem_banner {
+    display: flex;
+    height: 75%;
+    width: 75%;
+    align-items: center;
 }
 
-.header-link {
+/* Header Superior */
+.header-top {
+    background-color: #ffffff;
     color: white;
+    font-size: 14px;    
+}
+
+.header-link1 {
+    color: #0f6edf;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-link2 {
+    color: #cf4c43;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-link3 {
+    color: #20B25B;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-link4 {
+    color: #FF6A06;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-link5 {
+    color: #FA335B;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-link6 {
+    color: #00000082;
     text-decoration: none;
     font-weight: 500;
     padding: 5px 10px;
@@ -30,12 +79,6 @@ body {
 .header-link:hover {
     opacity: 0.8;
     color: white;
-}
-
-.header-link.active {
-    background-color: white;
-    color: #c4170c;
-    border-radius: 3px;
 }
 
 /* Navbar G1 */
@@ -53,8 +96,8 @@ body {
 }
 
 .section-title {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 50;
     color: white;
     letter-spacing: 2px;
     text-align: center;
@@ -128,7 +171,7 @@ body {
 }
 
 .list-article li:before {
-    content: "→";
+    content: "•";
     position: absolute;
     left: 0;
     color: #c4170c;
@@ -145,10 +188,25 @@ body {
     text-decoration: underline;
 }
 
+#color_wp {
+    color: #25D366;
+}
+
+.btn-outline-primary {
+    color: gray;
+    border-color: gray;
+}
+
+.btn-outline-primary:hover {
+    color: gray;
+    border-color: gray;
+    background-color: #f8f9fa;
+}
+
 /* Botões de Compartilhamento */
 .btn-outline-secondary {
-    border-color: #ddd;
-    color: #666;
+    border-color: #1e7acf00;
+    color: #0d7dcc;
     width: 36px;
     height: 36px;
     padding: 0;
@@ -178,6 +236,7 @@ body {
     color: #c4170c;
     border-color: #c4170c;
     font-weight: 600;
+    justify-content: center;
 }
 
 .btn-outline-danger:hover {
