@@ -1,0 +1,22 @@
+/* bandeira canadá */
+.container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: line;
+}
+.container div{
+    width: 100%;
+    
+}
+.vermelho{
+    align-content: center;
+    background-color: red;
+}
+.branco{
+    align-content: center;
+
+    background-color: white;
+    text-align: center;
+}

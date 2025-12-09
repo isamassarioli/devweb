@@ -1,0 +1,30 @@
+.vermelho{
+    border: 2px solid red;
+    color: red;
+}
+
+/* #corfundo-texto{
+    text-transform: uppercase;
+} */
+
+/* Estilos Upload Drag and Drop */
+.drop-zone {
+    border: 2px dashed #888;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.drop-zone.dragover {
+    background-color: #eef;
+    border-color: #33a;
+    color: #000;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-style: italic;
+}

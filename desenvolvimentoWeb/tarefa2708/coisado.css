@@ -1,0 +1,43 @@
+/* Seletor Universal */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Arial', sans-serif;
+    width: 800px;
+    margin: auto;
+    line-height: 45px;
+}
+
+p{
+    text-align: justify;
+    color: gray;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    font-size: 140%;
+    font-weight: 140;
+}
+
+.cor-texto-preto{
+    color: black;
+}
+
+ul{
+    line-height: 32px;
+    font-size: large;
+}
+
+a{
+    color: red;
+}
+#omg{
+    line-height: 80px;
+}
+
+#forreal{
+    font-style: italic;
+}
