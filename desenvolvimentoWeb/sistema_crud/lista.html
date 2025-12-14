@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minhas Tarefas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <i class="bi bi-check2-square"></i> Sistema de Tarefas
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="lista.html">Minhas Tarefas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="bi bi-list-check"></i> Minhas Tarefas</h2>
+        <a href="novo.html" class="btn btn-primary">
+          <i class="bi bi-plus-circle"></i> Nova Tarefa
+        </a>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Nome da Tarefa</th>
+              <th>Data/Hora</th>
+              <th>Prioridade</th>
+              <th class="text-center">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Finalizar Projeto Web</strong>
+                <br>
+                <small class="text-muted">Conclusão do projeto Bootstrap com CRUD completo</small>
+              </td>
+              <td>14/12/2025 - 23:59</td>
+              <td>
+                <span class="badge bg-danger">Alta</span>
+              </td>
+              <td class="text-center">
+                <a href="editar.html?id=1" class="btn btn-sm btn-warning" title="Editar">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <button class="btn btn-sm btn-danger" onclick="abrirModalExclusao(1, 'Finalizar Projeto Web')" title="Deletar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Revisar Código</strong>
+                <br>
+                <small class="text-muted">Revisar e fazer testes do sistema CRUD</small>
+              </td>
+              <td>15/12/2025 - 14:30</td>
+              <td>
+                <span class="badge bg-warning text-dark">Média</span>
+              </td>
+              <td class="text-center">
+                <a href="editar.html?id=2" class="btn btn-sm btn-warning" title="Editar">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <button class="btn btn-sm btn-danger" onclick="abrirModalExclusao(2, 'Revisar Código')" title="Deletar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Preparar Documentação</strong>
+                <br>
+                <small class="text-muted">Documentar o código e criar README</small>
+              </td>
+              <td>16/12/2025 - 10:00</td>
+              <td>
+                <span class="badge bg-warning text-dark">Média</span>
+              </td>
+              <td class="text-center">
+                <a href="editar.html?id=3" class="btn btn-sm btn-warning" title="Editar">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <button class="btn btn-sm btn-danger" onclick="abrirModalExclusao(3, 'Preparar Documentação')" title="Deletar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Deploy do Sistema</strong>
+                <br>
+                <small class="text-muted">Publicar o sistema em um servidor online</small>
+              </td>
+              <td>17/12/2025 - 18:00</td>
+              <td>
+                <span class="badge bg-success">Baixa</span>
+              </td>
+              <td class="text-center">
+                <a href="editar.html?id=4" class="btn btn-sm btn-warning" title="Editar">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <button class="btn btn-sm btn-danger" onclick="abrirModalExclusao(4, 'Deploy do Sistema')" title="Deletar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <strong>Feedback dos Usuários</strong>
+                <br>
+                <small class="text-muted">Coletar e analisar feedback para melhorias</small>
+              </td>
+              <td>20/12/2025 - 15:30</td>
+              <td>
+                <span class="badge bg-success">Baixa</span>
+              </td>
+              <td class="text-center">
+                <a href="editar.html?id=5" class="btn btn-sm btn-warning" title="Editar">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <button class="btn btn-sm btn-danger" onclick="abrirModalExclusao(5, 'Feedback dos Usuários')" title="Deletar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 text-center">
+        <p class="text-muted">Total de tarefas: 5</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalExclusao" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title"><i class="bi bi-exclamation-triangle"></i> Confirmação de Exclusão</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p id="mensagemExclusao"></p>
+        <p class="text-muted small">Esta ação não pode ser desfeita.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger" id="btnConfirmarExclusao" onclick="confirmarExclusao()">
+          <i class="bi bi-trash"></i> Deletar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="toastSucesso" class="toast align-items-center text-white bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">
+        <i class="bi bi-check-circle"></i> Tarefa deletada com sucesso!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-0">&copy; 2025 Sistema de Tarefas. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
